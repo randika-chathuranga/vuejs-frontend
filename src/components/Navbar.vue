@@ -20,13 +20,21 @@ export default {
 
   data: () => ({
     menus: [
-      { title: "Home", route: "home" },
-      { title: "About Us", route: "about-us" },
-      { title: "Portfolio", route: "portfolio" },
-      { title: "Project", route: "project" },
-      { title: "Gallery", route: "gallery" },
-      { title: "Contact", route: "contact" },
+      { title: "Home", route: "/" },
+      { title: "AboutUs", route: "/about" },
+      { title: "Portfolio", route: "/portfolio" },
+      { title: "Project", route: "/project" },
+      { title: "Gallery", route: "/gallery" },
+      { title: "Contact", route: "/contact" },
     ],
   }),
 };
 </script>
+
+<style>
+.v-toolbar__title {
+  font-size: 30px;
+  color: mediumblue;
+  font-family: -webkit-body;
+}
+</style>
