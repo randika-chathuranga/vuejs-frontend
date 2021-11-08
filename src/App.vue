@@ -3,6 +3,7 @@
     <Navbar />
     <Home />
     <About />
+    <Portfolio />
     <v-main>
       <router-view />
     </v-main>
@@ -13,6 +14,7 @@
 import Navbar from "../src/components/Navbar.vue";
 import Home from "../src/views/Home.vue";
 import About from "../src/views/About.vue";
+import Portfolio from "../src/views/Portfolio.vue";
 
 export default {
   name: "App",
@@ -20,6 +22,7 @@ export default {
     Navbar,
     Home,
     About,
+    Portfolio,
   },
   data: () => ({}),
 };
