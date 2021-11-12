@@ -60,6 +60,24 @@
           </v-card>
         </v-col>
       </slot>
+      <slot v-if="activePortfolio === 'desktopapp'">
+        <v-col
+          lg="3"
+          v-for="desktopitem in desktopitems"
+          :key="desktopitem.title"
+        >
+          <v-card>
+            <v-img
+              :src="desktopitem.img"
+              class="white--text align-end"
+              gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
+              height="200px"
+            >
+              <v-card-title>{{ desktopitem.title }}</v-card-title>
+            </v-img>
+          </v-card>
+        </v-col>
+      </slot>
     </v-row>
   </v-container>
 </template>
@@ -131,6 +149,37 @@ export default {
         },
         {
           title: "mobile App7",
+          img: "https://images.pexels.com/photos/285814/pexels-photo-285814.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+        },
+      ],
+
+      desktopitems: [
+        {
+          title: "desktop App1",
+          img: "https://images.pexels.com/photos/251225/pexels-photo-251225.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+        },
+        {
+          title: "desktop App2",
+          img: "https://images.pexels.com/photos/160107/pexels-photo-160107.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+        },
+        {
+          title: "desktop App3",
+          img: "https://images.pexels.com/photos/1779487/pexels-photo-1779487.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+        },
+        {
+          title: "desktop App4",
+          img: "https://images.pexels.com/photos/326501/pexels-photo-326501.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+        },
+        {
+          title: "desktop App5",
+          img: "https://images.pexels.com/photos/326503/pexels-photo-326503.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+        },
+        {
+          title: "desktop App6",
+          img: "https://images.pexels.com/photos/3194518/pexels-photo-3194518.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+        },
+        {
+          title: "desktop App7",
           img: "https://images.pexels.com/photos/285814/pexels-photo-285814.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
         },
       ],
