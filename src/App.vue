@@ -4,6 +4,7 @@
     <Home />
     <About />
     <Portfolio />
+    <Project />
     <v-main>
       <router-view />
     </v-main>
@@ -15,6 +16,7 @@ import Navbar from "../src/components/Navbar.vue";
 import Home from "../src/views/Home.vue";
 import About from "../src/views/About.vue";
 import Portfolio from "../src/views/Portfolio.vue";
+import Project from "../src/views/Project.vue";
 
 export default {
   name: "App",
@@ -23,6 +25,7 @@ export default {
     Home,
     About,
     Portfolio,
+    Project,
   },
   data: () => ({}),
 };
