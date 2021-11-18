@@ -7,6 +7,7 @@
     <Project />
     <Gallery />
     <Contact />
+    <Footer />
     <v-main>
       <router-view />
     </v-main>
@@ -21,6 +22,7 @@ import Portfolio from "../src/views/Portfolio.vue";
 import Project from "../src/views/Project.vue";
 import Gallery from "../src/views/Gallery.vue";
 import Contact from "../src/views/Contact.vue";
+import Footer from "../src/views/Footer.vue";
 
 export default {
   name: "App",
@@ -32,6 +34,7 @@ export default {
     Project,
     Gallery,
     Contact,
+    Footer,
   },
   data: () => ({}),
 };
